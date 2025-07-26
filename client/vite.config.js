@@ -8,7 +8,7 @@ export default defineConfig({
     tailwindcss(),],
      server: {
     proxy: {
-      '/api': 'http://localhost:4000', // proxy API requests to backend
+      '/api': 'https://ecommerce-web-backend-g4hs.onrender.com', // proxy API requests to backend
     },
   },
 })
