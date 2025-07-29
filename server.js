@@ -12,8 +12,12 @@ const connectDB=require("./config/db");
 connectDB();
 
 //middleware
-const cors=require('cors');//Allows your server to be accessed from different domains
-app.use(cors());
+const cors = require('cors');
+
+app.use(cors({
+  origin: ["https://ecommerce-web-frontend-5n9p.onrender.com"], // Replace with your deployed frontend URL
+  credentials: true,
+}));
 app.use(express.json());//Parses JSON request bodies automatically
 const morgan=require('morgan');//Logs requests to the console for easier debugging during development
 app.use(morgan('dev'));
