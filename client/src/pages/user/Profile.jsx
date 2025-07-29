@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Layout from "./../../components/Layout/Layout";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
-import axios from "axios";
+import axios from "../../axiosConfig";
 
 const Profile = () => {
   //context
